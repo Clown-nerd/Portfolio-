@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nickson Nyagol | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <h1 class="logo">Nickson</h1>
+            <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle">🌓</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="animated-text">Hi, I'm <span>Nickson</span></h1>
+        <p>CS Student & Aspiring Developer</p>
+        <div class="cta-buttons">
+            <a href="https://github.com/Clown-nerd" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+            <a href="https://linkedin.com/in/nickson-nyagol-72a244309" target="_blank" rel="noopener noreferrer" class="social-link" >LinkedIn</a>
+            <!-- Resume Download Button -->
+            <a href="path/to/your-resume.pdf" download class="resume-download">
+                Download Resume
+                <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v14m0 0l-4-4m4 4l4-4M3 15v4a2 2 0 002 2h14a2 2 0 002-2v-4"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Java</h3>
+                <p>OOP, Data Structures</p>
+            </div>
+            <!-- Repeat for C++, Web Dev, etc. -->
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Student Management System</h3>
+                <p>Java & MySQL</p>
+                <a href="https://github.com/Clown-nerd" class="project-link">View Code</a>
+            </div>
+            <!-- Add other projects -->
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

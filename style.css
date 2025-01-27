@@ -1,0 +1,121 @@
+/* Base Styles */
+:root {
+    --primary: #2ecc71;
+    --bg: #ffffff;
+    --text: #333;
+}
+
+[data-theme="dark"] {
+    --bg: #1a1a1a;
+    --text: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background 0.3s, color 0.3s;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Hero Animation */
+.animated-text {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Skill/Project Cards */
+.skill-card, .project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover, .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.project-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background: var(--primary);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+/* Dark Mode Toggle */
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* CTA Buttons Container */
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Resume Download Button */
+.resume-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.resume-download:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+}
+
+.download-icon {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+
+.resume-download:hover .download-icon {
+    transform: translateY(2px);
+}
+
+/* Social Links (Update existing) */
+.social-link {
+    padding: 12px 24px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    color: var(--text);
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    border-color: var(--primary);
+    background: rgba(46, 204, 113, 0.1);
+}
